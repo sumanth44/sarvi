@@ -1,0 +1,39 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
+const HomePage: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleOrderClick = () => {
+    navigate('/menu'); // assumes /menu route shows your menu
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-stone-900 to-stone-800 text-white">
+      {/* Hero Section */}
+      <div className="relative">
+        <img
+          src="/bg3.png" // Replace with your actual image path
+          alt="Delicious Food"
+          className="w-full h-[90vh] object-cover brightness-75"
+        />
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+            Welcome to <span className="text-orange-400">Sarvi</span>
+          </h1>
+          <p className="text-lg sm:text-xl max-w-2xl mb-6 text-gray-200">
+            Discover delicious flavors from around the world, delivered to your doorstep.
+          </p>
+          <button
+            onClick={handleOrderClick}
+            className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-2xl shadow-lg transition duration-300"
+          >
+            Order Online
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default HomePage;
