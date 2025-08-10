@@ -38,7 +38,8 @@ const menuItemSchema = new mongoose.Schema({
   'Non veg biriyani',
   'Puloos',
   'Weekend special',
-  'Sides'
+  'Sides',
+  'Desserts'
 ]
 
   },
