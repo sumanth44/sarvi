@@ -361,7 +361,7 @@ const AdminPanel: React.FC = () => {
         {/* Menu Items Tab */}
         {activeTab === 'menu' && (
           <div className="bg-stone-800 rounded-xl p-6">
-            <h2 className="text-2xl font-bold text-orange-300 mb-6">Manage Menu Items</h2>
+            <h2 className="text-2xl font-bold text-orange-300 mb-6">Mnage Menu Items</h2>
             
             <div className="overflow-x-auto">
               <table className="w-full text-left">
