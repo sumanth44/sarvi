@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SARVI Indian Cuisine – Menu</title>
+    <meta name="description"
+        content="Explore the authentic Indian cuisine menu at SARVI – Biryanis, Curries, Dosas, Appetizers, Desserts and more." />
+    <link rel="icon" href="public/logo-circle.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&family=Cinzel:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Floating food elements -->
+    <div class="food-particles">
+        <span class="particle" style="--i:1">🌿</span>
+        <span class="particle" style="--i:2">✨</span>
+        <span class="particle" style="--i:3">🍃</span>
+        <span class="particle" style="--i:4">⭐</span>
+        <span class="particle" style="--i:5">🌶️</span>
+        <span class="particle" style="--i:6">🍃</span>
+        <span class="particle" style="--i:7">✨</span>
+        <span class="particle" style="--i:8">🌿</span>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header-bg-pattern"></div>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="public/logo-circle.png" alt="SARVI Logo" class="nav-logo-img" />
+            </div>
+            <div class="nav-brand">
+                <span class="nav-brand-name">SARVI</span>
+                <span class="nav-brand-sub">★ Indian Cuisine ★</span>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#party-packs">Party Packs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <div class="hero-content">
+                <div class="hero-logo-wrap">
+                    <img src="public/logo-main.png" alt="SARVI Indian Cuisine" class="hero-logo" />
+                </div>
+                <p class="hero-tagline">Authentic Flavors of India — Crafted with Passion</p>
+                <div class="hero-divider">
+                    <span>❖</span>
+                    <div class="divider-line"></div>
+                    <span>❖</span>
+                </div>
+                <a href="#menu" class="hero-cta">Explore Menu</a>
+            </div>
+            <div class="hero-scroll-hint">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CATEGORY QUICK-NAV -->
+    <section class="categories-bar" id="categories">
+        <div class="container">
+            <h2 class="section-title">Browse Categories</h2>
+            <div class="section-ornament">⸻ ❖ ⸻</div>
+            <div class="cat-grid" id="catGrid">
+                <button class="cat-btn active" data-cat="all">🍽️ All</button>
+                <button class="cat-btn" data-cat="soups">🍲 Soups</button>
+                <button class="cat-btn" data-cat="dosa">🌯 Dosa</button>
+                <button class="cat-btn" data-cat="snacks">🍟 Snacks</button>
+                <button class="cat-btn" data-cat="fastfood">🍜 Fast Food</button>
+                <button class="cat-btn" data-cat="appetizers-veg">🧆 Appetizers Veg</button>
+                <button class="cat-btn" data-cat="appetizers-nonveg">🍗 Appetizers Non-Veg</button>
+                <button class="cat-btn" data-cat="curries-veg">🍛 Curries Veg</button>
+                <button class="cat-btn" data-cat="curries-nonveg">🍗 Curries Non-Veg</button>
+                <button class="cat-btn" data-cat="biryani-veg">🍚 Biryani Veg</button>
+                <button class="cat-btn" data-cat="biryani-nonveg">🍗 Biryani Non-Veg</button>
+                <button class="cat-btn" data-cat="pulao">🍽️ Pulao</button>
+                <button class="cat-btn" data-cat="breads">🍞 Breads</button>
+                <button class="cat-btn" data-cat="sides">🍛 Sides</button>
+                <button class="cat-btn" data-cat="desserts">🍰 Desserts</button>
+                <button class="cat-btn" data-cat="beverages">🥤 Beverages</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN MENU -->
+    <main class="menu-section" id="menu">
+        <div class="container">
+
+            <!-- SOUPS -->
+            <div class="menu-category" data-cat="soups">
+                <div class="category-header">
+                    <div class="cat-icon">🍲</div>
+                    <h2 class="cat-title">Soups</h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Veg Manchow</span><span
+                            class="item-price">$5.99</span></div>
+                    <div class="menu-item"><span class="item-name">Sweet Corn</span><span
+                            class="item-price">$5.99</span></div>
+                    <div class="menu-item"><span class="item-name">Tomato Soup</span><span
+                            class="item-price">$5.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chicken Manchow</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$6.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chicken Clear Soup</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$6.99</span></div>
+                </div>
+            </div>
+
+            <!-- DOSA -->
+            <div class="menu-category" data-cat="dosa">
+                <div class="category-header">
+                    <div class="cat-icon">🌯</div>
+                    <h2 class="cat-title">Dosa</h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Plain Dosa</span><span
+                            class="item-price">$10.99</span></div>
+                    <div class="menu-item"><span class="item-name">Ghee Dosa</span><span
+                            class="item-price">$10.99</span></div>
+                    <div class="menu-item"><span class="item-name">Masala Dosa</span><span
+                            class="item-price">$12.99</span></div>
+                    <div class="menu-item"><span class="item-name">Onion Dosa</span><span
+                            class="item-price">$12.99</span></div>
+                    <div class="menu-item"><span class="item-name">Cheese Dosa</span><span
+                            class="item-price">$12.99</span></div>
+                    <div class="menu-item"><span class="item-name">Butter Dosa</span><span
+                            class="item-price">$12.99</span></div>
+                    <div class="menu-item"><span class="item-name">Egg Dosa</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$12.99</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Dosa</span><span
+                            class="item-price">$12.99</span></div>
+                    <div class="menu-item"><span class="item-name">Ghee Karam Dosa</span><span
+                            class="item-price">$13.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chicken Dosa</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$13.99</span></div>
+                </div>
+            </div>
+
+            <!-- SNACKS -->
+            <div class="menu-category" data-cat="snacks">
+                <div class="category-header">
+                    <div class="cat-icon">🍟</div>
+                    <h2 class="cat-title">Snacks</h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Chai (Small)</span><span
+                            class="item-price">$1.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chai (Large)</span><span
+                            class="item-price">$3.49</span></div>
+                    <div class="menu-item"><span class="item-name">Samosa (2 pcs)</span><span
+                            class="item-price">$4.99</span></div>
+                    <div class="menu-item"><span class="item-name">Cajun / Masala Fries</span><span
+                            class="item-price">$5.99</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Pakora</span><span
+                            class="item-price">$6.99</span></div>
+                    <div class="menu-item"><span class="item-name">Bread Pakora (2 pcs)</span><span
+                            class="item-price">$6.99</span></div>
+                    <div class="menu-item"><span class="item-name">Mirchi Bajji (4 pcs)</span><span
+                            class="item-price">$7.99</span></div>
+                    <div class="menu-item"><span class="item-name">Punugulu</span><span class="item-price">$7.99</span>
+                    </div>
+                    <div class="menu-item"><span class="item-name">Cut Mirchi</span><span
+                            class="item-price">$7.99</span></div>
+                </div>
+            </div>
+
+            <!-- FAST FOOD -->
+            <div class="menu-category" data-cat="fastfood">
+                <div class="category-header">
+                    <div class="cat-icon">🍜</div>
+                    <h2 class="cat-title">Fast Food</h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Fried Rice (Reg / Gobhi / Paneer / Egg)</span><span
+                            class="item-price">$13.99</span></div>
+                    <div class="menu-item"><span class="item-name">Noodles (Reg / Gobhi / Paneer / Egg)</span><span
+                            class="item-price">$13.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chicken Fried Rice (Reg / Schezwan)</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$14.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chicken Noodles (Reg / Schezwan)</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$14.99</span></div>
+                </div>
+            </div>
+
+            <!-- APPETIZERS VEG -->
+            <div class="menu-category" data-cat="appetizers-veg">
+                <div class="category-header">
+                    <div class="cat-icon">🧆</div>
+                    <h2 class="cat-title">Appetizers <span class="cat-sub">(Veg)</span></h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Veg Manchurian</span><span
+                            class="item-price">$13.99</span></div>
+                    <div class="menu-item"><span class="item-name">Gobhi Manchurian</span><span
+                            class="item-price">$13.99</span></div>
+                    <div class="menu-item"><span class="item-name">Gobhi 65</span><span class="item-price">$14.99</span>
+                    </div>
+                    <div class="menu-item"><span class="item-name">Paneer 65</span><span
+                            class="item-price">$14.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chilli Paneer</span><span
+                            class="item-price">$14.99</span></div>
+                    <div class="menu-item"><span class="item-name">Palleturu Paneer</span><span
+                            class="item-price">$14.99</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Tikka Kebab</span><span
+                            class="item-price">$14.99</span></div>
+                </div>
+            </div>
+
+            <!-- APPETIZERS NON-VEG -->
+            <div class="menu-category" data-cat="appetizers-nonveg">
+                <div class="category-header">
+                    <div class="cat-icon">🍗</div>
+                    <h2 class="cat-title">Appetizers <span class="cat-sub">(Non-Veg)</span></h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Chicken Lollipop</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$14.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chicken Wings</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$14.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chicken Manchurian</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$14.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chicken Pakoda</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$15.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chilli Chicken</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$15.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chicken 65 (Wet / Dry)</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$15.99</span></div>
+                    <div class="menu-item"><span class="item-name">Karivepaku Chicken</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$15.99</span></div>
+                    <div class="menu-item"><span class="item-name">Palleturu Chicken</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$15.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chicken Joint</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$15.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chicken Majestic</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$15.99</span></div>
+                    <div class="menu-item"><span class="item-name">Apollo Fish</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$16.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chicken Tikka Kebab</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$16.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chicken Tikka</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$17.99</span></div>
+                    <div class="menu-item"><span class="item-name">Tawa Prawns</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$17.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chilli Prawns</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$17.99</span></div>
+                    <div class="menu-item"><span class="item-name">Gongura Prawns</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$17.99</span></div>
+                </div>
+            </div>
+
+            <!-- CURRIES VEG -->
+            <div class="menu-category" data-cat="curries-veg">
+                <div class="category-header">
+                    <div class="cat-icon">🍛</div>
+                    <h2 class="cat-title">Curries <span class="cat-sub">(Veg)</span></h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Dal Tadka</span><span
+                            class="item-price">$13.99</span></div>
+                    <div class="menu-item"><span class="item-name">Gutti-Vankaya Masala</span><span
+                            class="item-price">$14.99</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Butter Masala</span><span
+                            class="item-price">$14.99</span></div>
+                    <div class="menu-item"><span class="item-name">Palak Paneer</span><span
+                            class="item-price">$14.99</span></div>
+                    <div class="menu-item"><span class="item-name">Special Palleturu Paneer</span><span
+                            class="item-price">$14.99</span></div>
+                    <div class="menu-item"><span class="item-name">Mushroom Masala</span><span
+                            class="item-price">$15.99</span></div>
+                </div>
+            </div>
+
+            <!-- CURRIES NON-VEG -->
+            <div class="menu-category" data-cat="curries-nonveg">
+                <div class="category-header">
+                    <div class="cat-icon">🍗</div>
+                    <h2 class="cat-title">Curries <span class="cat-sub">(Non-Veg)</span></h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Egg Bhurji</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$12.99</span></div>
+                    <div class="menu-item"><span class="item-name">Egg Masala</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$13.99</span></div>
+                    <div class="menu-item"><span class="item-name">Hyderabadi Chicken Curry</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$15.99</span></div>
+                    <div class="menu-item"><span class="item-name">Butter Chicken</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$15.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chicken Boneless Curry</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$15.99</span></div>
+                    <div class="menu-item"><span class="item-name">Kadai Chicken</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$15.99</span></div>
+                    <div class="menu-item"><span class="item-name">Special Palleturu Chicken</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$15.99</span></div>
+                    <div class="menu-item"><span class="item-name">Hyderabadi Mutton Curry</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$16.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chef's Special Mutton Masala</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$17.99</span></div>
+                </div>
+            </div>
+
+            <!-- BIRYANI VEG -->
+            <div class="menu-category" data-cat="biryani-veg">
+                <div class="category-header">
+                    <div class="cat-icon">🍚</div>
+                    <h2 class="cat-title">Biryani <span class="cat-sub">(Veg)</span></h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Paneer Biryani</span><span
+                            class="item-price">$13.99</span></div>
+                    <div class="menu-item"><span class="item-name">Mushroom Biryani</span><span
+                            class="item-price">$13.99</span></div>
+                    <div class="menu-item"><span class="item-name">Gutti-Vankaya Biryani</span><span
+                            class="item-price">$14.99</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Tikka Biryani</span><span
+                            class="item-price">$14.99</span></div>
+                    <div class="menu-item"><span class="item-name">Gongura Paneer Biryani</span><span
+                            class="item-price">$15.99</span></div>
+                    <div class="menu-item"><span class="item-name">Cashew Paneer Biryani</span><span
+                            class="item-price">$15.99</span></div>
+                </div>
+            </div>
+
+            <!-- BIRYANI NON-VEG -->
+            <div class="menu-category" data-cat="biryani-nonveg">
+                <div class="category-header">
+                    <div class="cat-icon">🍗</div>
+                    <h2 class="cat-title">Biryani <span class="cat-sub">(Non-Veg)</span></h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Egg Biryani</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$13.99</span></div>
+                    <div class="menu-item"><span class="item-name">HYD Chicken Dum Biryani</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$15.99</span></div>
+                    <div class="menu-item"><span class="item-name">Boneless Chicken Biryani</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$16.99</span></div>
+                    <div class="menu-item"><span class="item-name">Andhra Chicken Biryani</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$16.99</span></div>
+                    <div class="menu-item"><span class="item-name">Bezawada Chicken Biryani</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$16.99</span></div>
+                    <div class="menu-item"><span class="item-name">Joint Chicken Biryani</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$16.99</span></div>
+                    <div class="menu-item"><span class="item-name">Ulavacharu Chicken Biryani</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$16.99</span></div>
+                    <div class="menu-item"><span class="item-name">Gongura Chicken Biryani</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$16.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chicken Tikka Biryani</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$16.99</span></div>
+                    <div class="menu-item"><span class="item-name">Mutton Biryani</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$17.99</span></div>
+                    <div class="menu-item"><span class="item-name">Special Mutton Biryani</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$18.99</span></div>
+                    <div class="menu-item"><span class="item-name">Chef's Special Prawns Biryani</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$18.99</span></div>
+                </div>
+            </div>
+
+            <!-- PULAO -->
+            <div class="menu-category" data-cat="pulao">
+                <div class="category-header">
+                    <div class="cat-icon">🍽️</div>
+                    <h2 class="cat-title">Pulao</h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Paneer Pulao</span><span
+                            class="item-price">$14.99</span></div>
+                    <div class="menu-item"><span class="item-name">Special Chicken Pulao</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$15.99</span></div>
+                    <div class="menu-item"><span class="item-name">Special Chicken Joint Pulao</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$15.99</span></div>
+                    <div class="menu-item"><span class="item-name">Boneless Chicken Pulao</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$15.99</span></div>
+                    <div class="menu-item"><span class="item-name">Ulavacharu Chicken Pulao</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$15.99</span></div>
+                    <div class="menu-item"><span class="item-name">Gongura Chicken Pulao</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$15.99</span></div>
+                    <div class="menu-item"><span class="item-name">Prawns Pulao</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$17.99</span></div>
+                    <div class="menu-item"><span class="item-name">Mutton Pulao</span><span
+                            class="item-badge nonveg">Non-Veg</span><span class="item-price">$17.99</span></div>
+                </div>
+            </div>
+
+            <!-- BREADS -->
+            <div class="menu-category" data-cat="breads">
+                <div class="category-header">
+                    <div class="cat-icon">🍞</div>
+                    <h2 class="cat-title">Breads</h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Roti</span><span class="item-price">$1.99</span>
+                    </div>
+                    <div class="menu-item"><span class="item-name">Tandoori Roti</span><span
+                            class="item-price">$3.49</span></div>
+                    <div class="menu-item"><span class="item-name">Plain Naan</span><span
+                            class="item-price">$3.49</span></div>
+                    <div class="menu-item"><span class="item-name">Butter Naan</span><span
+                            class="item-price">$3.49</span></div>
+                    <div class="menu-item"><span class="item-name">Garlic Naan</span><span
+                            class="item-price">$3.99</span></div>
+                    <div class="menu-item"><span class="item-name">Lachha Paratha</span><span
+                            class="item-price">$3.99</span></div>
+                    <div class="menu-item"><span class="item-name">Naan Basket</span><span
+                            class="item-price">$14.99</span></div>
+                </div>
+            </div>
+
+            <!-- SIDES -->
+            <div class="menu-category" data-cat="sides">
+                <div class="category-header">
+                    <div class="cat-icon">🍛</div>
+                    <h2 class="cat-title">Sides</h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Jeera Rice</span><span
+                            class="item-price">$7.99</span></div>
+                    <div class="menu-item"><span class="item-name">Sambhar Rice</span><span
+                            class="item-price">$7.99</span></div>
+                    <div class="menu-item"><span class="item-name">Biryani Rice</span><span
+                            class="item-price">$7.99</span></div>
+                    <div class="menu-item"><span class="item-name">Curd Rice</span><span class="item-price">$7.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DESSERTS -->
+            <div class="menu-category" data-cat="desserts">
+                <div class="category-header">
+                    <div class="cat-icon">🍰</div>
+                    <h2 class="cat-title">Desserts</h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Gulab Jamun</span><span
+                            class="item-price">$3.99</span></div>
+                    <div class="menu-item"><span class="item-name">Rasmalai</span><span class="item-price">$4.99</span>
+                    </div>
+                    <div class="menu-item"><span class="item-name">Mango Delight</span><span
+                            class="item-price">$4.99</span></div>
+                    <div class="menu-item"><span class="item-name">Bread Halwa</span><span
+                            class="item-price">$5.99</span></div>
+                    <div class="menu-item"><span class="item-name">Brownie With Ice Cream</span><span
+                            class="item-price">$6.99</span></div>
+                </div>
+            </div>
+
+            <!-- BEVERAGES -->
+            <div class="menu-category" data-cat="beverages">
+                <div class="category-header">
+                    <div class="cat-icon">🥤</div>
+                    <h2 class="cat-title">Beverages</h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Canned Pop (Coke / Sprite / Ginger Ale)</span><span
+                            class="item-price">$1.99</span></div>
+                    <div class="menu-item"><span class="item-name">Thumsup / Limca / Fanta</span><span
+                            class="item-price">$2.99</span></div>
+                    <div class="menu-item"><span class="item-name">Lemon Soda</span><span
+                            class="item-price">$3.99</span></div>
+                    <div class="menu-item"><span class="item-name">Mango Lassi</span><span
+                            class="item-price">$4.99</span></div>
+                    <div class="menu-item"><span class="item-name">Sweet Lassi</span><span
+                            class="item-price">$4.99</span></div>
+                </div>
+            </div>
+
+        </div><!-- end .container -->
+    </main>
+
+    <!-- PARTY PACKS -->
+    <section class="party-packs" id="party-packs">
+        <div class="container">
+            <h2 class="section-title light">🍽️ Biryani Party Packs</h2>
+            <div class="section-ornament light">⸻ ❖ ⸻</div>
+            <p class="party-sub">Feeds 5–6 / 10–12 people — Perfect for celebrations!</p>
+            <div class="party-grid">
+                <div class="party-item">
+                    <span class="party-name">Paneer Biryani</span>
+                    <span class="party-price">$29.99 / $52.99</span>
+                </div>
+                <div class="party-item">
+                    <span class="party-name">HYD Chicken Dum Biryani</span>
+                    <span class="party-price">$31.99 / $54.99</span>
+                </div>
+                <div class="party-item">
+                    <span class="party-name">Boneless Chicken Biryani</span>
+                    <span class="party-price">$34.99 / $56.99</span>
+                </div>
+                <div class="party-item">
+                    <span class="party-name">Andhra Chicken Biryani</span>
+                    <span class="party-price">$35.99 / $57.99</span>
+                </div>
+                <div class="party-item">
+                    <span class="party-name">Bezawada Ck Biryani</span>
+                    <span class="party-price">$35.99 / $57.99</span>
+                </div>
+                <div class="party-item">
+                    <span class="party-name">Joint Chicken Biryani</span>
+                    <span class="party-price">$35.99 / $57.99</span>
+                </div>
+                <div class="party-item">
+                    <span class="party-name">Ulavacharu Chicken Biryani</span>
+                    <span class="party-price">$35.99 / $57.99</span>
+                </div>
+                <div class="party-item">
+                    <span class="party-name">Gongura Chicken Biryani</span>
+                    <span class="party-price">$35.99 / $57.99</span>
+                </div>
+                <div class="party-item">
+                    <span class="party-name">Mutton Biryani</span>
+                    <span class="party-price">$37.99 / $60.99</span>
+                </div>
+                <div class="party-item">
+                    <span class="party-name">Special Mutton Biryani</span>
+                    <span class="party-price">$37.99 / $60.99</span>
+                </div>
+                <div class="party-item">
+                    <span class="party-name">Chef's Special Prawns Biryani</span>
+                    <span class="party-price">$37.99 / $60.99</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTACT -->
+    <footer class="footer" id="contact">
+        <div class="footer-pattern"></div>
+        <div class="container footer-inner">
+
+            <div class="footer-logo-wrap">
+                <img src="public/logo-circle.png" alt="SARVI Logo" class="footer-logo" />
+                <div>
+                    <div class="footer-name">SARVI</div>
+                    <div class="footer-tagline">★ Indian Cuisine ★</div>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <!-- Contact Info -->
+            <div class="footer-contact">
+                <div class="footer-contact-item">
+                    <span class="icon">📍</span>
+                    <a href="https://maps.google.com/?q=464+Sherbourne+Street+Toronto+ON" target="_blank"
+                        rel="noopener">
+                        464 Sherbourne Street, Toronto, ON M4X 1K3
+                    </a>
+                </div>
+                <div class="footer-contact-item">
+                    <span class="icon">📞</span>
+                    <a href="tel:+14161234567">(416) 123-4567</a>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <!-- Delivery Platforms -->
+            <div class="footer-delivery">
+                <div class="footer-delivery-title">Also Available On</div>
+                <div class="delivery-badges">
+                    <div class="delivery-badge">
+                        <span class="badge-icon">🛵</span>
+                        <span class="badge-name">DoorDash</span>
+                    </div>
+                    <div class="delivery-badge">
+                        <span class="badge-icon">🚀</span>
+                        <span class="badge-name">SkipTheDishes</span>
+                    </div>
+                    <div class="delivery-badge">
+                        <span class="badge-icon">🍴</span>
+                        <span class="badge-name">Uber Eats</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <p class="footer-copy">© 2025 SARVI Indian Cuisine. All rights reserved.</p>
+            <p class="footer-copy small">Prices subject to change. Taxes not included.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
